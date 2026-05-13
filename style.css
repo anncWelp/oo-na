@@ -1,0 +1,372 @@
+/* =========================
+   DESIGN VARIABLES
+========================= */
+:root {
+    --deep-blue: #0A192F;
+    --light-gray: #F5F7FA;
+    --white: #FFFFFF;
+
+    --text-dark: #1F2933;
+    --link-blue: #007BFF;
+    --link-hover: #0056B3;
+}
+
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    color: #ffffff;
+    
+}
+body1
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.images
+{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+.images:hover
+{
+  transform: scale(1.1);  
+}
+.information
+{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ 
+}
+.officers
+{
+    margin: 10px;
+    align-items: center;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light-gray);
+    color: var(--text-dark);
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* =========================
+   WRAPPER
+========================= */
+.page-wrapper {
+    flex: 1;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header {
+    background-color: var(--deep-blue);
+    color: var(--white);
+    
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 30px 0 20px;
+
+    
+}
+
+.school-title h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    color: var(--white);
+}
+
+.school-title p {
+    font-size: 18px;
+    color: var(--light-gray);
+    margin-top: 5px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+            background: #0f1b2e;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+.nav-btn {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.nav-btn:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: #4da3ff;
+}
+
+.nav-btn.active {
+    border-bottom: 2px solid #4da3ff;
+}
+    /* All Menu Items */
+        .menu-item {
+            position: relative;
+        }
+
+        /* All Buttons (Links) */
+        .menu-btn {
+           color: var(--white);
+        text-decoration: none;
+        margin: 0 10px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: 0.3s;
+        display: inline-block;
+        }
+
+        .menu-btn:hover {
+            background: #0A192F;
+            color: #fff;
+        }
+
+        /* Arrow indicator for items with submenus */
+        .has-children::after {
+            content: '›';
+            margin-left: auto;
+            font-size: 1.2rem;
+            transition: transform 0.2s;
+        }
+
+        .menu-item:hover > .has-children::after {
+            transform: rotate(90deg);
+        }
+
+        .submenu {
+            position: absolute;
+            top: 0;
+            left: 100%; /* Opens to the RIGHT for nested levels */
+            background: #0A192F;
+            border-radius: 10px;
+            min-width: 200px;
+            padding: 0.5rem;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(-10px);
+            transition: all 0.25s ease;
+            box-shadow: 0 10px 30px #0A192F;
+            z-index: 100;
+        }
+
+        .menu-item > .submenu {
+            top: 100%;
+            left: 0;
+            transform: translateY(-10px);
+        }
+
+        .menu-item:hover > .submenu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0) translateX(0);
+        }
+
+        /* Submenu items */
+        .submenu .menu-item {
+            width: 100%;
+        }
+
+        .submenu .menu-btn {
+            padding: 0.8rem 1.2rem;
+            border-radius: 6px;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .submenu .submenu {
+            top: 0;
+            left: 100%;
+            margin-left: 0.5rem;
+            transform: translateX(-10px);
+        }
+
+        /* Highlight color for deeper levels */
+        .submenu .submenu {
+            background: #0f3460;
+        }
+
+        .submenu .submenu .submenu {
+            background: #533483;
+        }
+
+        /* Active/Hover trail */
+        .menu-item:hover > .menu-btn {
+            background: #1F2933;
+            color: #007BFF;
+        }
+
+        .submenu .menu-item:hover > .menu-btn {
+            background: #1F2933;
+        }
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--deep-blue);
+}
+
+h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* =========================
+   VISION-MISSION SECTION
+========================= */
+.vision-mission {
+    background-color: var(--white);
+    padding: 30px;
+    margin-top: 35px;
+    border-radius: 12px;
+    line-height: 1.9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.vision-mission h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+    font-size: 28px;
+}
+
+.vision-mission p {
+    text-align: justify;
+    color: #444;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.vision-mission .highlight {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #8b0000;
+}
+
+/* =========================
+   LINKS
+========================= */
+a {
+    color: var(--link-blue);
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn {
+    display: inline-block;
+    background-color: var(--deep-blue);
+    color: var(--white);
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--link-hover);
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    background-color: var(--deep-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #4da3ff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    background-color: #081423;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.nav-btn {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.nav-btn:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: #4da3ff;
+}
+
+.nav-btn.active {
+    border-bottom: 2px solid #4da3ff;
+}
+

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--GARADO-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4th Year Representatives</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f8fafc;
+            color: #1F2933;
+            text-align: center;
+        }
+
+        header {
+            padding: 60px 20px;
+            background: #0f172a;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+
+            /* FLEXBOX FOR GRIND LAYOUT */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        /* REPRESENTATIVE ITEM STYLE */
+        .rep-item {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* PHOTO STYLE */
+        .image-container img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid #38bdf8;
+            margin-bottom: 15px;
+        }
+
+
+<!--BALBUENA-->
+        /* TEXT STYLE */
+        .info h2 {
+            font-size: 22px;
+            color: #0f172a;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .info .section-tag {
+            font-size: 14px;
+            font-weight: 600;
+            color: #38bdf8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+<!--JUMAWID-->
+        /* STYLE FOR THIRD REP */
+        .full-width {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        @media(max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .rep-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+
+<!--BALBUENA-->
+<body>
+
+<header class="header">
+    <div class="header-container">
+        <div class="school-title">
+            <h1>La Concepcion College</h1>
+            <p>Information Technology Division</p>
+        </div>
+    </div>
+
+    
+    <nav class="navbar">
+        <a href="HOME.html" class="nav-btn active">Home</a>
+        <a href="EVENTS.html" class="nav-btn">Events</a>
+        <a href="announcements.html" class="nav-btn">Announcements</a>
+        <a href="calendar.html" class="nav-btn">School Calendar</a>
+         <div class="menu-item">
+            <a href="ORGANIZATION.html" class="menu-btn">Organization ▾</a>
+            <div class="submenu">
+                <div class="menu-item"><a href="#" class="menu-btn">Media</a></div>
+                <div class="menu-item"><a href="OFFICER NGANI.html" class="menu-btn">Officer</a></div>
+                <div class="menu-item">
+                    <a href="#" class="menu-btn">Representative ▾</a>
+                    <div class="submenu">
+                        <div class="menu-item"><a href="1st.html" class="menu-btn">1st year</a></div>
+                        <div class="menu-item"><a href="2ndyr.html" class="menu-btn">2nd year</a></div>
+                        <div class="menu-item"><a href="3rdyr.html" class="menu-btn">3rd year</a></div>
+                        <div class="menu-item"><a href="4thyr.html" class="menu-btn">4th year</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="about.html" class="nav-btn">About Us</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <div class="rep-item">
+        <div class="image-container">
+            <img src="https://i.postimg.cc/rsDr61Bn/Francis-Paul-Arquesa-BSIS-4A.jpg" alt="Francis Paul Arquesa">
+        </div>
+        <div class="info">
+            <h2>Francis Paul Arquesa</h2>
+            <span class="section-tag">BSIS 4A Representative</span>
+        </div>
+    </div>
+<!--BALBUENA-->
+
+<!--JUMAWID-->
+    <div class="rep-item">
+        <div class="image-container">
+            <img src="https://i.postimg.cc/fbHc6RV5/Leomar-B-Alejandro-BSIS-4B.jpg" alt="Leomar B. Alejandro">
+        </div>
+        <div class="info">
+            <h2>Leomar B. Alejandro</h2>
+            <span class="section-tag">BSIS 4B Representative</span>
+        </div>
+    </div>
+
+    <div class="full-width">
+        <div class="rep-item">
+            <div class="image-container">
+                <img src="https://i.postimg.cc/GtDv8PX2/Noel-V-Dorin-Jr-BSIS-4C.jpg" alt="Noel V. Dorin Jr.">
+            </div>
+            <div class="info">
+                <h2>Noel V. Dorin Jr.</h2>
+                <span class="section-tag">BSIS 4C Representative</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--JUMAWID-->
+
+</body>
+</html>
